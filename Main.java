@@ -7,7 +7,6 @@ class Main {
   public static final String RESET = "\u001B[0m";
 
   public static void main(String[] args) {
-
     Scanner Text = new Scanner(System.in);
     System.out.print(GREEN+"\n\nEnter Your Text > "+RESET);
 
@@ -26,6 +25,5 @@ class Main {
           long timeElapsed = finish - start;
          System.out.print(RESET+"\n"+timeElapsed+" MilliSeconds");
          Runtime.getRuntime().addShutdownHook(new ShutdownHook());
-
         }
 }
